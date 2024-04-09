@@ -6,6 +6,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+
+
 export function formatPrice(
   price: number | string,
   options: {
@@ -13,7 +15,7 @@ export function formatPrice(
     notation?: Intl.NumberFormatOptions['notation']
   } = {}
 ) {
-  const { currency = 'USD', notation = 'compact' } = options
+  const { currency = 'EUR', notation = 'compact' } = options
 
   const numericPrice =
     typeof price === 'string' ? parseFloat(price) : price
@@ -56,7 +58,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: '@joshtriedcoding',
+      creator: '@cesarmartel',
     },
     icons,
     metadataBase: new URL('https://digitalhippo.up.railway.app'),

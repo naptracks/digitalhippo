@@ -55,12 +55,12 @@ export const paymentRouter = router({
       })
 
       line_items.push({
-        price: 'price_1OCeBwA19umTXGu8s4p2G3aX',
+        price: "price_1P3a5fKyaAVRo4WyLbFj077i",
         quantity: 1,
         adjustable_quantity: {
           enabled: false,
         },
-      })
+      });
 
       try {
         const stripeSession =

@@ -25,7 +25,8 @@ const PaymentStatus = ({
         data?.isPaid ? false : 1000,
     }
   )
-
+  
+  // when it is paid
   useEffect(() => {
     if (data?.isPaid) router.refresh()
   }, [data?.isPaid, router])
